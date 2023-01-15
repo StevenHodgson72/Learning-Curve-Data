@@ -68,7 +68,7 @@ REFERENCES Customers ([ID])
 --Stage 3 - Insert into Orders table
 TRUNCATE TABLE Orders
 
---Reseed Orders table to reset ID AutoInc Primary Key to 0
+--Reseed Orders table to reset ID AutoInc Primary Key to 1
 DBCC CHECKIDENT ( 'Orders', RESEED, 1)
 
 --Insert into Orders table
